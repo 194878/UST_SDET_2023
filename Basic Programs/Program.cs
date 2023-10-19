@@ -1,12 +1,33 @@
 ﻿
 //driver
 using Basic_Programs;
-Electricity electricity1 = new (12345,9000,9300,"XX");
-Console.WriteLine(electricity1.consumernumber);
-Console.WriteLine(electricity1.consumername);
-Console.WriteLine(electricity1.CalculateBill());
-Electricity electricity2 = new(23456, 9000, 10000, "XX");
-Console.WriteLine(electricity2.consumernumber);
-Console.WriteLine(electricity2.consumername);
-Console.WriteLine(electricity2.CalculateBill());
+
+ArrayEx arrayEx = new ArrayEx();
+arrayEx.Ja();
+
+
+
+
+
+
+
+/*
+Employee employee = new(111, "AA", "IT", 10000);
+Console.WriteLine("Emp id :{0}\n"+
+   "Name : {1} \n"+ 
+    "Dept : {2} \n"+
+    "Basicpay : {3}\n"
+    ,employee.Eid,
+employee.Ename,
+employee.Dept,
+employee.Basicpay);
+Console.WriteLine("Net Pay :{0}",employee.CalculateSalary());
+*/
+
+
+
+
+
+
+
 
