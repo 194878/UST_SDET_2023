@@ -1,39 +1,26 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Assignment;
-using System.Runtime.Serialization;
-using System.Security.Cryptography;
 
+Console.WriteLine("1.Electronic Product 2.Digital Product 3.Clothing Product");
+switch (Convert.ToInt32(Console.ReadLine())) {
 
-Student[] student = new Student[3]
-    { new Student("ANU",new int[] {20,25,27},"C"),
-      new Student("MANU", new int[] { 60, 65, 67 }, "B"),
-      new Student("ANJU", new int[] { 90, 95, 97 }, "A")
-    };
+    case 1:
+        ElectronicProduct ep = new(2, "Pixel", 25000, 1);
+        ep.DisplayProductDetails();
+        ep.DisplayWarrantyPeriod();
+        break;
 
+        case 2:
+        DigitalProduct dp = new DigitalProduct("PDF", 2, "L G", 500000, 1);
+        dp.DisplayProductDetails();
+        dp.DisplayWarrantyPeriod();
+        dp.DisplayDigitalProduct();
+        break;
 
-foreach (Student s in student)
-{
- 
-    s.DisplayStudentDetails();
-    Console.WriteLine("Average is"+s.CalculateAverage());
-    Console.WriteLine(s.GetStudentSummary());
+        case 3:
+        ClothingProduct cp = new("medium", "kurti", 3000, 2);
+        cp.DisplayProductDetails();
+        cp.DisplayClothingProduct();
+        break;
 
 }
-
-
-
-
-/*
-
-Product P1=new Product("sugar", 14.5, 30);
-Product P2= new Product("salt", 4.5, 50);
-Product P3 = new Product("wheat", 23.5, 40);
-Product[] products = { P1, P2, P3 };
-
-foreach (Product product in products)
-{
-    product.DisplayProductDetails();
-    Console.WriteLine("Total Value:" + product.ProductValue());
-    Console.WriteLine();
-}
-*/

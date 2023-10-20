@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment
 {
-    class Product
+     internal class  Product
     {
         private string? productName;
         private double price;
