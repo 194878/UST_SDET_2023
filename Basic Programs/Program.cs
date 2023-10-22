@@ -1,21 +1,16 @@
 ﻿
 //driver
 using Basic_Programs;
+Doctor doc=new Doctor();
+doc.AddNewDoctor(12334, "AA");
+doc.DisplayDoctorDetails();
+doc.ModifyDoctor(11111,"SS");
+doc.DisplayDoctorDetails();
+doc.BookApp(9999,"ee");
+doc.DelApp("AA");
 
-EV ev=new();
-ev.Vehnum = 1234;
-ev.Brand = "Honda";
-ev.Model = "2019";
-ev.Display();
-Console.WriteLine(ev.setTypeForVehicle());
 
 
-PV pv= new PV();
-pv.Vehnum = 3690;
-pv.Brand = "Tata";
-pv.Model = "2023";
-pv.Display();
-Console.WriteLine(pv.setTypeForVehicle());
 
 
 
