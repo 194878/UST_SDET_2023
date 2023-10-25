@@ -1,15 +1,18 @@
 ﻿
 //driver
 using Basic_Programs;
-Doctor doc=new Doctor();
-doc.AddNewDoctor(12334, "AA");
-doc.DisplayDoctorDetails();
-doc.ModifyDoctor(11111,"SS");
-doc.DisplayDoctorDetails();
-doc.BookApp(9999,"ee");
-doc.DelApp("AA");
 
 
+//NGC nGC = new NGC();
+//nGC.ArrayListHandling();
+//nGC.Queuehandling();
+//nGC.HThandling();
+//nGC.SLHandling();
+//
+Basic_Programs.GC gC = new Basic_Programs.GC();
+//gC.Dicthandling();
+//gC.ListHandling();
+gC.SLHandling();
 
 
 

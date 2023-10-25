@@ -1,26 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Assignment;
 
-Console.WriteLine("1.Electronic Product 2.Digital Product 3.Clothing Product");
-switch (Convert.ToInt32(Console.ReadLine())) {
+LifeInsurance li=new(30,"pp12",112,2000);
+Console.WriteLine($"Policy Name:{li.PolicyName}\nPolicy Id{li.PolicyId}\nPremium:{li.PremiumAmount}\nsuminsured:{li.CalculatePremium()}");
 
-    case 1:
-        ElectronicProduct ep = new(2, "Pixel", 25000, 1);
-        ep.DisplayProductDetails();
-        ep.DisplayWarrantyPeriod();
-        break;
+CarInsurance car=new ("sedan","pp13",113,3000);
+Console.WriteLine($"Policy Name:{car.PolicyName}\nPolicy Id{car.PolicyId}\nPremium:{car.PremiumAmount}\nsuminsured:{car.CalculatePremium()}");
 
-        case 2:
-        DigitalProduct dp = new DigitalProduct("PDF", 2, "L G", 500000, 1);
-        dp.DisplayProductDetails();
-        dp.DisplayWarrantyPeriod();
-        dp.DisplayDigitalProduct();
-        break;
 
-        case 3:
-        ClothingProduct cp = new("medium", "kurti", 3000, 2);
-        cp.DisplayProductDetails();
-        cp.DisplayClothingProduct();
-        break;
 
-}
+
+
+
+//InsurancePolicy np = new InsurancePolicy("AA", 112, 30000);
+//np.RenewPolicy(12000);
+//InsurancePolicy np1=new InsurancePolicy("BB",111,20000);
+//np.RenewPolicy();
