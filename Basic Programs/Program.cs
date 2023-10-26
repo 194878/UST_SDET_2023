@@ -1,18 +1,57 @@
 ﻿
 //driver
 using Basic_Programs;
+using Basic_Programs.Exceptionmess;
+
+ExceptionHandling excep = new ExceptionHandling(100, 107);
+
+try
+{
+    excep.NumCheck();
+   
+}
+catch(ArgumentException ex)
+
+    {
+    Console.WriteLine(ex.Message);
+}
+try
+{
+    excep.NumCheck1();
+
+}
+catch (ArgumentException ex)
+
+{
+    Console.WriteLine(ex.Message);
+}
 
 
-//NGC nGC = new NGC();
-//nGC.ArrayListHandling();
-//nGC.Queuehandling();
-//nGC.HThandling();
-//nGC.SLHandling();
-//
-Basic_Programs.GC gC = new Basic_Programs.GC();
-//gC.Dicthandling();
-//gC.ListHandling();
-gC.SLHandling();
+
+
+/*
+try
+{
+    excep.Divide();
+}
+catch (ArithmeticException ex)
+{
+
+    Console.WriteLine(MyExceptions.excmesslist["Div 0"]);
+
+}
+catch (IndexOutOfRangeException ex)
+{
+    Console.WriteLine(MyExceptions.excmesslist["IOR"]);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(MyExceptions.excmesslist["UE"]);
+}
+finally
+{
+    Console.WriteLine("Done");
+}
 
 
 
