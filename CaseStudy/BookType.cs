@@ -19,6 +19,7 @@ namespace CaseStudy
         public string? Genre { get; set; }
 
     }
+    /*
     public void DisplayDetails()
     {
         Console.WriteLine($"Title of Book is:{Title}");
@@ -31,4 +32,5 @@ namespace CaseStudy
     
 
     }
+    */
 }

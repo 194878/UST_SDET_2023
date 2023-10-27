@@ -16,6 +16,8 @@ namespace Assignment
 
         List<Patient> Patients = new List<Patient>();
 
+       
+
         public void AddPatient(Patient patient) {
             if ((patient.Age < 0 || patient.Age > 120))
             {

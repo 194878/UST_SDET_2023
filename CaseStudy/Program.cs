@@ -1,6 +1,6 @@
 ﻿using CaseStudy;
 using static System.Reflection.Metadata.BlobBuilder;
-
+/*
 int number = 1;
 string? Title;
 
@@ -24,7 +24,7 @@ do {
             Console.WriteLine("Book added successfully");
             foreach ( BookType book in booktype )
             {
-                booktype = booktype.DisplayDetails();
+                booktype = booktype.);
 
             }
             break;
@@ -56,7 +56,7 @@ do {
                     Console.WriteLine($"Book price is :{book.Price}");
                     Console.WriteLine($"Book avaialability is :{book.Availability}");
                     order.TotalCost = book.Price;
-                    Console.WriteLine($"Book totalcost is :{book.Totalcost}");
+                    Console.WriteLine($"Book totalcost is :",order.TotalCost);
                 }
                 else {
                     Console.WriteLine("No book available");
@@ -95,3 +95,4 @@ do {
 
 
 }while(number!=0);
+*/

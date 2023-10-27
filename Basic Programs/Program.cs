@@ -1,8 +1,19 @@
 ﻿
 //driver
 using Basic_Programs;
-using Basic_Programs.Exceptionmess;
+//using Basic_Programs.Exceptionmess;
 
+
+FileOperations fo=new FileOperations();
+//fo.WriteData();
+//fo.CreateFile();
+//fo.CopyMoveFile();
+//fo.ReadData();
+//fo.DeleteFile();
+fo.FileProperties();
+
+
+/*
 ExceptionHandling excep = new ExceptionHandling(100, 107);
 
 try
@@ -52,7 +63,7 @@ finally
 {
     Console.WriteLine("Done");
 }
-
+*/
 
 
 

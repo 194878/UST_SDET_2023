@@ -22,16 +22,16 @@ namespace Basic_Programs
 
         public void Divide()
         {
-                int[] num = { 10, 20, 30 };
-                int res = Num1 / Num2;
+            int[] num = { 10, 20, 30 };
+            int res = Num1 / Num2;
+            Console.WriteLine(res);
+            for (int i = 0; i < 3; i++)
+            {
+                res = num[i] / Num2;
                 Console.WriteLine(res);
-                for (int i = 0; i < 3; i++)
-                {
-                     res = num[i] / Num2;
-                   Console.WriteLine(res);
-                }
-            
-            
+            }
+
+
         }
         public void NumCheck()
         {
@@ -48,13 +48,13 @@ namespace Basic_Programs
             {
                 Console.WriteLine("congrats");
             }
-            else { 
-             throw new ArgumentException(MyExceptions.excmesslist["NotHunt2"]);
+            else {
+                throw new ArgumentException(MyExceptions.excmesslist["NotHunt2"]);
             }
-            public void NumCheck1()
+            void NumCheck1()
             {
                 MyExceptions myExceptions = new MyExceptions();
-                
+
                 if (Num2 < 100)
                 {
                     Console.WriteLine("congrats");
@@ -64,6 +64,6 @@ namespace Basic_Programs
                     throw new ArgumentException(MyExceptions.excmesslist["NotHunt2"]);
                 }
             }
-        
-    }
-}
+
+        }
+    } }
