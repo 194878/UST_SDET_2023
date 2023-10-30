@@ -32,7 +32,7 @@ while (true)
 
             try
             {
-                medicalHistory.MedRecordInfo(medicalHistory);
+                MedicalHistory.MedRecordInfo(recordId,patientId,description,date);
             }
             catch (ArgumentException ex) { Console.WriteLine(ex.Message); }
 
