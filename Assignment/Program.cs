@@ -1,5 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Assignment;
+Circle circle = new Circle(3);
+circle.Draw();
+Rectangle rectangle = new Rectangle(5, 3);
+rectangle.Draw();
+
+
+/*
 using static Assignment.ExceptionHandl.MyException;
 while (true)
 {
@@ -80,7 +87,7 @@ while (true)
     }
 }
 
-
+*/
 
 
 

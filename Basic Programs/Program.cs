@@ -1,16 +1,41 @@
 ﻿
 //driver
 using Basic_Programs;
+
+
+GenEx<int> ga = new(new int[] { 1, 2, 3, 4 });
+ga.Display();
+
+
+/*
+GenEx<int> g1 = new GenEx<int>(10, 20);
+Console.WriteLine(g1.Val1+"  "+g1.Val2);
+
+GenEx<double> g2 = new GenEx<double>(10.097, 20.456);
+Console.WriteLine(g2.Val1 + "  " + g2.Val2);
+
+
+GenEx<string> g3= new GenEx<string>("HI", "Hello");
+Console.WriteLine(g3.Val1 + "  " + g3.Val2);
+
+GenEx<bool> g4 = new GenEx<bool>(true, false);
+Console.WriteLine(g4.Val1 + "   " + g4.Val2);
+*/
+
+
+
+
+
+
 //using Basic_Programs.Exceptionmess;
 
-
-FileOperations fo=new FileOperations();
+//FileOperations fo=new FileOperations();
 //fo.WriteData();
 //fo.CreateFile();
 //fo.CopyMoveFile();
 //fo.ReadData();
 //fo.DeleteFile();
-fo.FileProperties();
+//fo.FileProperties();
 
 
 /*
