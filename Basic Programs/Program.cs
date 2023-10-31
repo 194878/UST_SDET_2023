@@ -3,9 +3,25 @@
 using Basic_Programs;
 
 
+public delegate void del1( string mess);
+class Program
+{
+
+    public static void Main(string[] args)
+    {
+
+        del1 dobj1 = DelegateExample.MethodA;
+        dobj1("Hello  how are you");
+    }
+}
+
+
+
+
+/*
 GenEx<int> ga = new(new int[] { 1, 2, 3, 4 });
 ga.Display();
-
+*/
 
 /*
 GenEx<int> g1 = new GenEx<int>(10, 20);

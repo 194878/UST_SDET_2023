@@ -129,7 +129,7 @@ while (true)
 
                     break;
                 case 4:
-                    Console.WriteLine("call this number for support 96456636727");
+                    Console.WriteLine("call this number for support 99999999999");
                     break;
                 case 5:
                     Customer1 customer2 = Customer1.customers.Find(x => x.CustomerID == cusId);
@@ -242,11 +242,45 @@ while (true)
                 Console.WriteLine("Invalid");
             }
         }
-    }
+        else if (optionadmin == 2)
+        {
+            Console.WriteLine("User list is ");
+            foreach (var item1 in Customer1.customers)
+            {
+
+                Console.WriteLine("customer name:{0}", item1.CustomerName);
+            }
+            Console.WriteLine("Total product available are");
+            if (DigitalProduct.Products.Count == 0 && PhysicalProduct.Products.Count == 0)
+            {
+                Console.WriteLine("No Product Found found");
+            }
+            foreach (var item in DigitalProduct.Products)
+            {
+
+                Console.WriteLine("Productid:{0}\tProduct Name:{1}\tPrice:{2}\tProduct Quantity:{3}\tFileFormat:{4}\tDownloadlink:{5}", item.ProductId,
+                    item.ProductName, item.Price, item.ProductQuantity, item.FileFormat, item.DownloadLink);
+            }
+            foreach (var item in PhysicalProduct.Products)
+            {
+
+                Console.WriteLine("Productid:{0}\tProduct Name:{1}\tPrice:{2}\tProduct Quantity:{3}\tWeight:{4}" +
+                    "\tDimension:{5}", item.ProductId,
+                    item.ProductName, item.Price, item.ProductQuantity, item.ProductQuantity, item.Dimension);
+            }
+
+
+        }
+    
+
+}
+
+
     else
     {
         Console.WriteLine("invalid option");
     }
+
     Console.WriteLine("do you want to continue\n1.yes\n2.no");
     int opt = Convert.ToInt32(Console.ReadLine());
     if (opt == 1)
