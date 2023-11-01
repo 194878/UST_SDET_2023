@@ -1,6 +1,77 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Assignment;
+using System.Collections.Generic;
+
+//assignment2 1-11-23
+TouristDestinationTwo tourism = new("dest1", "singapore", 3.5,1000);
+TouristDestinationTwo tourism1 = new("dest2", "india", 4.5,2000);
+TouristDestinationTwo tourism2 = new("dest3", "us", 3,2000);
+TouristDestinationTwo tourism3 = new("dest4", "india", 5,1700);
+TouristDestinationTwo tourism4 = new("dest5", "thailand", 2.5,2300);
+TouristDestinationTwo tourism5 = new("dest6", "japan", 1.5,4000);
+
+TouristDestinationTwo.two.Add(tourism);
+TouristDestinationTwo.two.Add(tourism1);
+TouristDestinationTwo.two.Add(tourism2);
+TouristDestinationTwo.two.Add(tourism3);
+TouristDestinationTwo.two.Add(tourism4);
+TouristDestinationTwo.two.Add(tourism5);
+
+Console.WriteLine("Enter the rating");
+double rating = Convert.ToDouble(Console.ReadLine());
+
+tourism.TopRated(rating);
+tourism.SortedRate();
+Console.WriteLine("Enter the City name");
+string str = Console.ReadLine();
+
+tourism.FilterwithCityName(str);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//assignment1 1-11-23
+/*
+ List < TourismDestination > list = new List<TourismDestination>();
+TourismDestination tourism = new("dest1", "singapore", 3.5);
+TourismDestination tourism1 = new("dest2", "uk", 4.5);
+TourismDestination tourism2 = new("dest3", "us", 3);
+TourismDestination tourism3 = new("dest4", "india", 5);
+TourismDestination tourism4 = new("dest5", "thailand", 2.5);
+TourismDestination tourism5 = new("dest6", "japan", 1.5);
+
+list.Add(tourism);
+list.Add(tourism1);
+   list.Add(tourism2);
+list.Add(tourism3);
+list.Add(tourism4);
+list.Add(tourism5);
+tourism.SortofList(list);
+*/
+
+
+
+
+
+
+//assignment2 31/10/23
+
+/*
 using System.Reflection;
 class Program {
 
@@ -53,7 +124,7 @@ class Program {
 
 }
 
-
+*/
 
 
 //assign 1 (31-10-23)
