@@ -2,7 +2,59 @@
 
 using Assignment;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
+TourPackage tp=new TourPackage(123,"Manali","21/2/23",2340);
+TourPackage tp1 = new TourPackage(124, "Bnaglore", "24/2/23", 2770);
+
+TourPackage tp2 = new TourPackage(125, "Mysore", "25/2/23", 4000);
+
+TourPackage.tourPackages.Add(tp);
+TourPackage.tourPackages.Add(tp1);         //because its static
+TourPackage.tourPackages.Add(tp2);
+
+Thread thread = new Thread(TourPackage.TourReservation);     //create 1st thread
+Thread thread1 = new Thread(TourPackage.TourReservation);   //create 2nd thread
+thread.Start();
+thread.Join();
+thread1.Start();
+
+
+
+
+
+
+
+
+
+
+
+//Assignment1 2/11/23
+/*
+Hotel ht=new Hotel("flamingo",3,"aa","india",4);
+Hotel ht1 = new Hotel("amaze", 5, "bb", "uk", 5);
+Hotel ht2 = new Hotel("fish", 4, "acc", "us", 3);
+
+ await ht.HotelRoomReserve(3);
+await ht1.HotelRoomReserve(4);
+await ht2.HotelRoomReserve(6);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 //assignment2 1-11-23
 TouristDestinationTwo tourism = new("dest1", "singapore", 3.5,1000);
 TouristDestinationTwo tourism1 = new("dest2", "india", 4.5,2000);
@@ -28,7 +80,7 @@ string str = Console.ReadLine();
 
 tourism.FilterwithCityName(str);
 
-
+*/
 
 
 
