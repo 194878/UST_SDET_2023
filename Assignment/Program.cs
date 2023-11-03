@@ -1,6 +1,74 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more
+// information
 
 using Assignment;
+
+FamilyMember grandparent = new FamilyMember("Grandparent", 70);
+FamilyMember parent1 = new FamilyMember("Parent 1", 40);
+FamilyMember parent2 = new FamilyMember("Parent 2", 38);
+FamilyMember child1 = new FamilyMember("Child 1", 12);
+FamilyMember child2 = new FamilyMember("Child 2", 8);
+
+grandparent.AddChild(parent1);
+grandparent.AddChild(parent2);
+parent1.AddChild(child1);
+parent2.AddChild(child2);
+
+FamilyTree familyTree = new FamilyTree(grandparent);
+familyTree.DisplayFamilyTree();
+
+
+
+
+
+
+
+
+//Assignment1 3/11/23
+/*
+TaskItem taskItem = new TaskItem(12,"aaaaa",true);
+TaskItem taskItem1 = new TaskItem(13, "bbbb", false);
+TaskItem taskItem2 = new TaskItem(14, "cccc", true);
+
+TaskItem.taskItems.Add(taskItem);
+TaskItem.taskItems.Add(taskItem1);
+TaskItem.taskItems.Add(taskItem2);
+Console.WriteLine("Do you want to change the status of task enter the id to change");
+int id=Convert.ToInt32(Console.ReadLine());
+var bb = TaskItem.taskItems.Find(x=>x.TaskId==id);
+if (bb != null)
+{
+    bb.IsCompleted = true;
+    Console.WriteLine("change the status as completed");
+}
+else {
+
+
+    Console.WriteLine("id is not found");
+    Console.WriteLine("enter the id to remove the task");
+    int tem=Convert.ToInt32(Console.ReadLine());
+    TaskItem.taskItems.RemoveAll(x=>x.TaskId==tem);
+    Console.WriteLine("Task removed successfully");
+    Console.WriteLine("total task are");
+    TaskItem.DisplayToDoList();
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Assignment2 3-11-23
+/*
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
@@ -19,7 +87,7 @@ thread.Start();
 thread.Join();
 thread1.Start();
 
-
+*/
 
 
 
